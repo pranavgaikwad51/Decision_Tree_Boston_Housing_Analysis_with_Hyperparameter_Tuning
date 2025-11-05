@@ -5,7 +5,7 @@ import numpy as np
 # ---------------------------------------------------------
 # Load the trained Decision Tree model
 # ---------------------------------------------------------
-with open("best_pickle.pkl", "rb") as file:
+with open("rg_pickle.pkl", "rb") as file:
     model = pickle.load(file)
 
 # ---------------------------------------------------------
