@@ -22,10 +22,10 @@ Enter property details below to estimate the housing price using a trained **Dec
 # ---------------------------------------------------------
 # Load Model Safely
 # ---------------------------------------------------------
-model_path = "rg_pickle.pkl"
+model_path = "best_pickle.pkl"
 
 if not os.path.exists(model_path):
-    st.warning("⚠️ Model file `rg_pickle.pkl` not found. Please upload it below.")
+    st.warning("⚠️ Model file `best_pickle.pkl` not found. Please upload it below.")
     uploaded_file = st.file_uploader("Upload your trained model (.pkl file)", type=["pkl"])
     if uploaded_file:
         model = pickle.load(uploaded_file)
